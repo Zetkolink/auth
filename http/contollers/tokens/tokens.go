@@ -4,10 +4,10 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/Zetkolink/auth/http/helpers"
 	"github.com/Zetkolink/auth/models/tokens"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/render"
-	"subs/http/helpers"
 )
 
 // Controller type represents HTTP-controller.

@@ -7,9 +7,9 @@ import (
 
 	"github.com/Zetkolink/auth/http/contollers/apps"
 	"github.com/Zetkolink/auth/http/contollers/tokens"
+	"github.com/Zetkolink/auth/http/helpers"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"subs/http/helpers"
 )
 
 func (s *auth) setupHTTPServer(config httpConfig) error {
