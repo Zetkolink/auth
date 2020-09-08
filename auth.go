@@ -9,7 +9,6 @@ import (
 	"sync"
 	"time"
 
-	"git.aqq.me/go/app/launcher"
 	"github.com/Zetkolink/auth/models/apps"
 	"github.com/Zetkolink/auth/models/exchanges"
 	"github.com/Zetkolink/auth/models/tokens"
@@ -120,8 +119,7 @@ func (s *auth) runHTTPServer() {
 		err := s.httpServer.ListenAndServe()
 
 		if err != http.ErrServerClosed {
-			log.Println(err)
-			launcher.Stop()
+			s.Stop()
 		}
 	}()
 }
