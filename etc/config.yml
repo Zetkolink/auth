@@ -1,0 +1,13 @@
+db:
+  host: "127.0.0.1"
+  port: 5432
+  user: "postgres"
+  password: "mysecretpassword"
+  database: "postgres"
+http:
+  bind: ":8071"
+  readTimeout: 90
+  readHeaderTimeout: 90
+  writeTimeout: 90
+  idleTimeout: 90
+  maxHeaderBytes: 102400
